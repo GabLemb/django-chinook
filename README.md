@@ -34,11 +34,11 @@ requirements.txt
 1. **Clone the repository**
 
    ```sh
-   git clone <your-repo-url>
-   cd <repo-directory>
+   git clone https://github.com/GabLemb/django-chinook.git
+   cd django-chinook
    ```
 
-2. **Create and activate a virtual environment**
+2. **Create and activate a virtual environment (MacOS, Linux)**
 
    ```sh
    python3 -m venv env
@@ -48,24 +48,26 @@ requirements.txt
 3. **Install dependencies**
 
    ```sh
-   pip install -r requirements.txt
+   pip3 install -r requirements.txt
    ```
 
 4. **Database**
 
-   - The project uses `chinook.db` (already included).
+   - The project uses `chinook.db`.
    - If you need to recreate it, use the provided `schema.sql`.
 
-5. **Run migrations (if needed)**
+5. **Add db file: first/chinook.db**
+
+6. **Run migrations (if needed)**
 
    ```sh
-   python first/manage.py migrate
+   python3 first/manage.py migrate
    ```
 
-6. **Run the development server**
+7. **Run the development server**
 
    ```sh
-   python first/manage.py runserver
+   python3 first/manage.py runserver
    ```
 
 ## API Endpoints
